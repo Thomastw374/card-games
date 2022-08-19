@@ -25,7 +25,7 @@ public class CardGame {
 //        random int between 0 and number of players
         int playerNumber = random.nextInt((players.size()));
 
-        firstPlayerIndex = playerNumber - 1;
+        firstPlayerIndex = playerNumber;
 
         System.out.println(("Player " + (playerNumber + 1) + ", " + players.get((playerNumber)).name + ", goes first"));
     }

@@ -36,9 +36,8 @@ public class Snap extends CardGame {
             cardsDealt.add(dealCard());
             System.out.println(cardsDealt);
 
-
             if(round >= 1 && cardsDealt.get(round).symbol == cardsDealt.get(round-1).symbol ) {
-                System.out.println("Snap! You win!");
+                System.out.println("Snap! " + players.get(currentPlayerIndex).name + " wins!");
                 return;
             }
 
@@ -50,16 +49,12 @@ public class Snap extends CardGame {
                 System.out.println(currentPlayerIndex);
             }
 
+
+            System.out.println(players.get(currentPlayerIndex).name + "'s turn.");
+
+
 //            assign the given round to the relevant player. When for loop exits, check to see who's round it was.
 //            give winning credit to them. Make sure to remove redundant code.
-
-
-
-
-
-
-
-
 
         }
 

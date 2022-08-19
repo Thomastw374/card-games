@@ -7,7 +7,6 @@ public class Player {
     public String name;
     public int wins = 0;
     public int playerNum;
-    public int round;
 
     public Player(int playerNum) {
 
