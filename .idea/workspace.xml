@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a7792d59-c3e1-4678-a11a-6332bfc44b2e" name="Changes" comment="Snap game functional. Beginning implementation of 'Snap' input upon matching car draw.">
+    <list default="true" id="a7792d59-c3e1-4678-a11a-6332bfc44b2e" name="Changes" comment="Snap input timer and prompt working. Need to find a way to return to game or end game if snap is typed">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Snap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Snap.java" afterDir="false" />
     </list>
@@ -62,7 +62,14 @@
       <option name="project" value="LOCAL" />
       <updated>1660919992596</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Snap input timer and prompt working. Need to find a way to return to game or end game if snap is typed">
+      <created>1660928747701</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1660928747701</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -79,6 +86,17 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Snap game mostly functional. Need to complete method for displaying winner." />
     <MESSAGE value="Snap game functional. Beginning implementation of 'Snap' input upon matching car draw." />
-    <option name="LAST_COMMIT_MESSAGE" value="Snap game functional. Beginning implementation of 'Snap' input upon matching car draw." />
+    <MESSAGE value="Snap input timer and prompt working. Need to find a way to return to game or end game if snap is typed" />
+    <option name="LAST_COMMIT_MESSAGE" value="Snap input timer and prompt working. Need to find a way to return to game or end game if snap is typed" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.IllegalStateException" package="java.lang" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

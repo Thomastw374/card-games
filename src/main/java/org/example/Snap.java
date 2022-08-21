@@ -28,9 +28,9 @@ public class Snap extends CardGame {
     public static TimerTask snapInputTask = new TimerTask() {
         @Override
         public void run() {
-            if(snapInput != "snap") {
+            if(!snapInput.equals("snap")) {
                 System.out.println("You didn't type snap in time!");
-                return;
+                System.out.println("Press enter to continue");
             }
         }
     };
@@ -38,13 +38,19 @@ public class Snap extends CardGame {
     public static void getSnapInput() {
         Timer timer = new Timer();
         timer.schedule(snapInputTask, 3*1000);
-        System.out.println("Type snap to win!");
+        System.out.println("Type and enter snap to win!");
         Scanner snapInputScanner = new Scanner(System.in);
 
         snapInput = snapInputScanner.nextLine();
 
         timer.cancel();
-        System.out.println("Snap! " + players.get(currentPlayerIndex).name + " wins!");
+
+        if(snapInput.equals("snap")){
+            System.out.println("Snap! " + players.get(currentPlayerIndex).name + " wins!");
+        } else {
+            System.out.println("You didn't enter snap!");
+        }
+
 
     }
 
@@ -69,6 +75,9 @@ public class Snap extends CardGame {
 
             if(round >= 1 && cardsDealt.get(round).symbol == cardsDealt.get(round-1).symbol ) {
                 getSnapInput();
+                if(snapInput.toLowerCase().equals("snap")) {
+                    return;
+                }
             }
 
             if(currentPlayerIndex == players.size() - 1) {
