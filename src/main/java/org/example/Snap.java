@@ -91,9 +91,10 @@ public class Snap extends CardGame {
 
             System.out.println(players.get(currentPlayerIndex).name + "'s turn.");
 
-
-//            assign the given round to the relevant player. When for loop exits, check to see who's round it was.
-//            give winning credit to them. Make sure to remove redundant code.
+            if (deckOfCards.size() == 0) {
+                System.out.println("No cards left. It's a draw!");
+                return;
+            }
 
         }
 

@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a7792d59-c3e1-4678-a11a-6332bfc44b2e" name="Changes" comment="Snap input timer and prompt working. Need to find a way to return to game or end game if snap is typed">
+    <list default="true" id="a7792d59-c3e1-4678-a11a-6332bfc44b2e" name="Changes" comment="Program now able to accept the player input upon matched cards and responds appropriately">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Snap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Snap.java" afterDir="false" />
     </list>
@@ -69,7 +69,14 @@
       <option name="project" value="LOCAL" />
       <updated>1660928747701</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Program now able to accept the player input upon matched cards and responds appropriately">
+      <created>1661074760364</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1661074760365</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -87,7 +94,9 @@
     <MESSAGE value="Snap game mostly functional. Need to complete method for displaying winner." />
     <MESSAGE value="Snap game functional. Beginning implementation of 'Snap' input upon matching car draw." />
     <MESSAGE value="Snap input timer and prompt working. Need to find a way to return to game or end game if snap is typed" />
-    <option name="LAST_COMMIT_MESSAGE" value="Snap input timer and prompt working. Need to find a way to return to game or end game if snap is typed" />
+    <MESSAGE value="Program now able to accept the player input and responds appropriately" />
+    <MESSAGE value="Program now able to accept the player input upon matched cards and responds appropriately" />
+    <option name="LAST_COMMIT_MESSAGE" value="Program now able to accept the player input upon matched cards and responds appropriately" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
