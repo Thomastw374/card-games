@@ -37,7 +37,7 @@ public class Snap extends CardGame {
 
     public static void getSnapInput() {
         Timer timer = new Timer();
-        timer.schedule(snapInputTask, 3*1000);
+        timer.schedule(snapInputTask, 6*1000);
         System.out.println("Type and enter snap to win!");
         Scanner snapInputScanner = new Scanner(System.in);
 
@@ -54,7 +54,8 @@ public class Snap extends CardGame {
 
     }
 
-// Now just implement a way to track the round of the play. It should allow for randomising which player starts.
+//    CANNOT REUSE TIMERTASK! Must create a new one each time
+// Add comments. Try to fix schedule/cancelling issue.
     public static void main(String[] args) {
         CardGame cardGame = new CardGame("Snap");
         Player player1 = new Player(1);
@@ -69,7 +70,11 @@ public class Snap extends CardGame {
         for(int round = 0; gameWon = true; round++) {
             getPlayerInput();
             cardsDealt.add(dealCard());
-            System.out.println(cardsDealt);
+            if(round > 0) {
+                System.out.println(cardsDealt.get(round - 1).toString() );
+            }
+            System.out.println(cardsDealt.get(round).toString());
+
 
 //            apply timer. Wait for snap to be inputted. if it is print out the below. If not continue with loop.
 
@@ -82,10 +87,8 @@ public class Snap extends CardGame {
 
             if(currentPlayerIndex == players.size() - 1) {
                 currentPlayerIndex -= players.size() -1;
-                System.out.println(currentPlayerIndex);
             } else {
                 currentPlayerIndex++;
-                System.out.println(currentPlayerIndex);
             }
 
 

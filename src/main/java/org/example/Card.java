@@ -9,12 +9,18 @@ public class Card {
 
     @Override
     public String toString() {
-        final StringBuilder sb = new StringBuilder("Card{");
-        sb.append("suit='").append(suit).append('\'');
-        sb.append(", symbol='").append(symbol).append('\'');
-        sb.append(", value=").append(value);
-        sb.append('}');
-        return sb.toString();
+        String cardString = new String();
+        switch(this.suit){
+            case "U+2661": cardString += this.symbol + " of " + "Hearts, ";
+                break;
+            case "U+2663": cardString += this.symbol + " of " + "Clubs, ";
+                break;
+            case "U+2666": cardString += this.symbol + " of " + "Diamonds, ";
+                break;
+            case "U+2660": cardString += this.symbol + " of " + "Spades, ";
+                break;
+        }
+        return cardString;
     }
 
     public Card(String suit, String symbol) {
