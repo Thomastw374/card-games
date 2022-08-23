@@ -25,19 +25,21 @@ public class Snap extends CardGame {
         return;
     }
 
-    public static TimerTask snapInputTask = new TimerTask() {
-        @Override
-        public void run() {
-            if(!snapInput.equals("snap")) {
-                System.out.println("You didn't type snap in time!");
-                System.out.println("Press enter to continue");
+    public static TimerTask createTimerTask() {
+        return new TimerTask() {
+            @Override
+            public void run() {
+                if (!snapInput.equals("snap")) {
+                    System.out.println("You didn't type snap in time!");
+                    System.out.println("Press enter to continue");
+                }
             }
-        }
-    };
+        };
+    }
 
     public static void getSnapInput() {
         Timer timer = new Timer();
-        timer.schedule(snapInputTask, 6*1000);
+        timer.schedule(createTimerTask(), 6 * 1000);
         System.out.println("Type and enter snap to win!");
         Scanner snapInputScanner = new Scanner(System.in);
 
@@ -45,7 +47,7 @@ public class Snap extends CardGame {
 
         timer.cancel();
 
-        if(snapInput.equals("snap")){
+        if (snapInput.equals("snap")) {
             System.out.println("Snap! " + players.get(currentPlayerIndex).name + " wins!");
         } else {
             System.out.println("You didn't enter snap!");
@@ -54,8 +56,6 @@ public class Snap extends CardGame {
 
     }
 
-//    CANNOT REUSE TIMERTASK! Must create a new one each time
-// Add comments. Try to fix schedule/cancelling issue.
     public static void main(String[] args) {
         CardGame cardGame = new CardGame("Snap");
         Player player1 = new Player(1);
@@ -67,26 +67,24 @@ public class Snap extends CardGame {
         currentPlayerIndex = firstPlayerIndex;
 
 
-        for(int round = 0; gameWon = true; round++) {
+        for (int round = 0; gameWon = true; round++) {
             getPlayerInput();
             cardsDealt.add(dealCard());
-            if(round > 0) {
-                System.out.println(cardsDealt.get(round - 1).toString() );
+            if (round > 0) {
+                System.out.println(cardsDealt.get(round - 1).toString());
             }
             System.out.println(cardsDealt.get(round).toString());
 
 
-//            apply timer. Wait for snap to be inputted. if it is print out the below. If not continue with loop.
-
-            if(round >= 1 && cardsDealt.get(round).symbol == cardsDealt.get(round-1).symbol ) {
+            if (round >= 1 && cardsDealt.get(round).symbol == cardsDealt.get(round - 1).symbol) {
                 getSnapInput();
-                if(snapInput.toLowerCase().equals("snap")) {
+                if (snapInput.toLowerCase().equals("snap")) {
                     return;
                 }
             }
 
-            if(currentPlayerIndex == players.size() - 1) {
-                currentPlayerIndex -= players.size() -1;
+            if (currentPlayerIndex == players.size() - 1) {
+                currentPlayerIndex -= players.size() - 1;
             } else {
                 currentPlayerIndex++;
             }
@@ -100,8 +98,5 @@ public class Snap extends CardGame {
             }
 
         }
-
-
-
     }
 }

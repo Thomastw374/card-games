@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a7792d59-c3e1-4678-a11a-6332bfc44b2e" name="Changes" comment="Added if statement to handle all cards being dealt">
+    <list default="true" id="a7792d59-c3e1-4678-a11a-6332bfc44b2e" name="Changes" comment="Modified snap game to only display current and previous card. Found timer task bug. Cannot reuse timer task.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Card.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Card.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Snap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Snap.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -84,7 +83,14 @@
       <option name="project" value="LOCAL" />
       <updated>1661075517891</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Modified snap game to only display current and previous card. Found timer task bug. Cannot reuse timer task.">
+      <created>1661114810311</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1661114810311</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -105,7 +111,8 @@
     <MESSAGE value="Program now able to accept the player input and responds appropriately" />
     <MESSAGE value="Program now able to accept the player input upon matched cards and responds appropriately" />
     <MESSAGE value="Added if statement to handle all cards being dealt" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added if statement to handle all cards being dealt" />
+    <MESSAGE value="Modified snap game to only display current and previous card. Found timer task bug. Cannot reuse timer task." />
+    <option name="LAST_COMMIT_MESSAGE" value="Modified snap game to only display current and previous card. Found timer task bug. Cannot reuse timer task." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
